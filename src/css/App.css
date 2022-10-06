@@ -1,0 +1,119 @@
+/* 전체 적용 */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* 레이아웃 */
+nav {
+  background-color: skyblue;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 40px;
+  top: 0;
+  position: sticky;
+}
+
+nav>ul {
+  display: flex;
+  list-style: none;
+}
+
+header {
+  background-color: #FF9494;
+}
+
+header>section {
+  display: flex;
+}
+
+.header_left,
+.header_right {
+  margin: 20px;
+}
+
+.header_left {
+  width: 30%;
+  text-align: center;
+  font-size: 1em;
+}
+
+.header_right {
+  width: 70%;
+}
+
+main {
+  background-color: #ECC5FB;
+  display: flex;
+}
+
+main>section {
+  width: 25%;
+  margin: 20px;
+  text-align: center;
+}
+
+img {
+  border-radius: 25%;
+}
+
+footer {
+  background-color: #3D8361;
+  color: white;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  position: sticky;
+}
+
+footer>h2,
+footer>ul {
+  margin: 10px;
+}
+
+footer>ul {
+  margin: none;
+  list-style: none;
+}
+
+@media only screen and (max-width:600px) {
+  header>section {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .header_left,
+  .header_right {
+      width: 80%;
+  }
+
+  main {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  main>section {
+      width: 80%;
+      text-align: center;
+  }
+
+  footer>ul{
+      display: none;
+  }
+}
+
+@media only screen and (max-width:600px) {
+  footer {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  footer>h2,
+  footer>ul {
+      width: 80%;
+  }
+
+}
