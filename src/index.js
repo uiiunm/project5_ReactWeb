@@ -1,18 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './css/index.css';
+import './styles/index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import Spp from './Spp';
-import Dpp from './Dpp';
+import MyMain from './MyMain';
 import Fpp from './Fpp';
 
-const web = ReactDOM.createRoot(document.getElementById('web'));
-web.render(
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
   <React.StrictMode>
     <App />
     <Spp />
-    <Dpp />
+    <MyMain />
     <Fpp />
   </React.StrictMode>
 );

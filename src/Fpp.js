@@ -1,11 +1,10 @@
-import './css/App.css';
-import './css/App1.css';
-import './css/App2.css';
-import './css/Fppfont.css';
+import './styles/App.css';
+import './styles/App1.css';
+import './styles/App2.css';
+import './styles/Fppfont.css';
 
 function Fpp() {
   return (
-    <div>
       <footer>
         <h2>AI 빅데이터분석 풀스택서비스 SW 개발자 양성과정</h2>
         <ul>
@@ -14,7 +13,6 @@ function Fpp() {
             <li>부산대학교 과학기술연구동 4층 401호 juri3763@pusan.ac.kr 051-510-3764</li>
         </ul>
     </footer>
-    </div>
   );
 }
 
